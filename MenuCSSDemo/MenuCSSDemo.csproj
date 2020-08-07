@@ -57,6 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\ITL Logo.JPG" />
+    <Content Include="img\itl.jpg" />
+    <Content Include="login.aspx" />
+    <Content Include="login.master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -65,38 +69,36 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="img\ITL Logo.JPG" />
     <Content Include="Menu.css" />
-    <Content Include="Staff\Menu2.aspx" />
-    <Content Include="Staff\Menu2.css" />
-    <Content Include="Staff\Staff_Default.aspx" />
-    <Content Include="Staff\Staff_Default.css" />
+    <Content Include="test.aspx" />
     <Content Include="Web.config" />
-    <Content Include="Menu.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.master.cs">
+      <DependentUpon>login.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.master.designer.cs">
+      <DependentUpon>login.master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Menu.aspx.cs">
-      <DependentUpon>Menu.aspx</DependentUpon>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Menu.aspx.designer.cs">
-      <DependentUpon>Menu.aspx</DependentUpon>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Staff\Menu2.aspx.cs">
-      <DependentUpon>Menu2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Staff\Menu2.aspx.designer.cs">
-      <DependentUpon>Menu2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Staff\Staff_Default.aspx.cs">
-      <DependentUpon>Staff_Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Staff\Staff_Default.aspx.designer.cs">
-      <DependentUpon>Staff_Default.aspx</DependentUpon>
-    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Staff\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

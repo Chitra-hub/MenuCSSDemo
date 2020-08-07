@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="login.master.cs" Inherits="MenuCSSDemo.login" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="Menu.css" rel="stylesheet" />
+    <title>Dashboard | Login</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <img src="img/ITL%20Logo.JPG" />
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+         <br />
+        <br />
+        <br />
+        <br />
+         <br />
+        <br />
+        <br />
+        <br />
+         <br />
+        <br />
+        <br />
+        <br />
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+         <%--Dropdown menu--%>
+            <div class="drop">
+                <button class="dropbtn">
+                    Home
+                </button>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Add/Update Company
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="test.aspx">Mgt Company</a> <a href="test.aspx">ITL Add Company</a> <a href="test.aspx">ITSL Add Company</a>
+                        <a href="test.aspx">Board Meeting Information</a>
+                        <a href="test.aspx">Insert Statutory Information</a>
+                    </div>
+                </div>
+                <button class="dropbtn" onclick="location.href='test.aspx'">
+                    Mail Reference
+                </button>
+                 <button class="dropbtn" onclick="location.href='test.aspx'">
+                    FSC Records
+                </button>
+                 <button class="dropbtn" onclick="location.href='test.aspx'">
+                    Renewal Forms
+                </button>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Company BioData
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="test.aspx">Decision Maker</a> <a href="test.aspx">Product Type</a> 
+                        <a href="test.aspx">Insert Info</a> <a href="test.aspx">Additional Info</a>
+                        <a href="test.aspx">Trust</a> <a href="test.aspx">Foundation</a>
+
+                    </div>
+                </div>
+                <button class="dropbtn" onclick="location.href='test.aspx'">
+                    Login
+                </button>
+                <br />
+                <br />
+            </div>
+ 
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
